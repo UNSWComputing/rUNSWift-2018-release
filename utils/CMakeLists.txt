@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
+
+
+include(bootstrap-qt.cmake)
+include(bootstrap-robotdir.cmake)
+
+# offnao and vision tests are required due to use of absolute
+# paths in header files
+include_directories("offnao")
+include_directories("vatnao")
+include_directories("vatnao-legacy")
+
+add_subdirectory(offnao)
+add_subdirectory(vatnao)
+add_subdirectory(vatnao-legacy)

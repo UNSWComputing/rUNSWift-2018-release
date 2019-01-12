@@ -1,0 +1,2 @@
+#!/bin/sh
+${RUNSWIFT_CHECKOUT_DIR}/build-release/utils/vatnao-legacy/vatnao-legacy "$@"

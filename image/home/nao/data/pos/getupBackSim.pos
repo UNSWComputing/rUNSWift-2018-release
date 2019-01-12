@@ -1,0 +1,51 @@
+# HY   HP  LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP     LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+# init position lay dead
+  0    0   90      30     0      0     0   0    0       0       0       0       0      0      0     0     0      0      0      90    -30     0     0      0   0  400
+$ 0    0   0       0      0      0     0   0    0       0       0       0       0      0      0     0     0      0      0      0      0      0     0      0   0 
+
+# init position stiff
+  0    0   90      30     0      0      0   0     0      0      0      0       0      0      0      0     0      0      0     90     -30     0     0     0   0  400
+$ 1    1    1      1     1       1      1   1     1      1      1      1       1      1      1      1     1      1      1      1      1      1     1     1   1 
+
+# feet in, hands to back
+  0    0   120     12     5      -85    0   0     0      0      25     115    -25     0      0      25    115    -25    0     120     -12    -5    85    0   0  400
+$ 0    0    1      1     1       1      1   1     1      1      1      1       1      1      1      1     1      1      1      1      1      1     1     1   1 
+
+# feet out
+  0   29   120     12     5      -85    0   0     0      0      25     35      50     0      0      25    35     50     0     120     -12    -5    85    0   0  400
+$ 0    1    1      1     1       1      1   1     1      1      1      1       1      1      1      1     1      1      1      1      1      1     1     1   1 
+
+# body up
+  0   29   120     12     5      -85    0   0     0      0     -55     57      57     0      0     -55    57     57     0     120     -12    -5    85    0   0  400
+
+# feet out, body more straight
+  0   29   115     0      20     -20    0   0    -30     0     -70    0       52     0      0     -70    0      52     0     115     0      -20   20    0   0  400
+
+# legs spread
+  0   29  115     0      20     -20    0   0     -65     32    -88    83      46    -10    -32    -88    83     46    10     115     0      -20   20    0   0  400
+
+# HY   HP  LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP     LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+# arms up
+  0   29    20     0     0      0    0      0   -65     32       -88    0      0     0        -32    -88   0     46    10     20     0       0   0    0   0  400
+
+# HY   HP  LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP     LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+# knees back down
+  0   29    20     0     0      0    0      0   -65     32       -88    121    0     0      -32    -88  121    0    0     20     0       0   0    0   0  400
+
+# HY   HP  LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP     LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+# flick angles down
+  0   29    20     0     0      0    0      0   -65     32       -88    121    50     0      -32    -88  121    0   50     20     0       0   0    0   0  100
+
+# HY   HP  LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP     LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+# hold position
+#  0   29    20     0     0      0    0      0   -65     32       -88    121      0     0      -32    -88  121    0    10     20     0       0   0    0   0  100
+
+# HY   HP  LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP     LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+# straighten out
+  0   29    90     0     0      0    0      0   -35     0       0       0      0     0       0     0      0        0    0     90     0       0   0    0   0  500
+
+# HY   HP  LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP     LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+# straighten hip yaw pitch
+  0   29    90     0     0      0    0      0     0     0       0       0      0     0       0     0      0        0    0     90     0       0   0    0   0  100
+
+

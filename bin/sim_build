@@ -1,0 +1,16 @@
+#!/bin/sh
+cd ${RUNSWIFT_CHECKOUT_DIR}
+cd build-release
+cmake -DSIMULATION=ON .
+make "$@"
+
+if [ $? -eq 0 ]; then
+    echo " "
+    echo "\033[0;33m*********************************************"
+    echo "You just built a version of rUNSWift designed"
+    echo "  to be ran locally for simulation purposes."
+    echo " "
+    echo "       \033[1;33mDO NOT RUN THIS BUILD ON A NAO!"
+    echo "\033[0;33m*********************************************\033[0m"
+fi
+

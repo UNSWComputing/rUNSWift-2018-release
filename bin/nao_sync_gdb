@@ -1,0 +1,14 @@
+#!/bin/sh
+cd ${RUNSWIFT_CHECKOUT_DIR}
+nao_sync -b build-relwithdebinfo "$@"
+
+echo "=================================================="
+echo "If you are now looking to run gdb on the nao, run:"
+echo
+echo "\tnao_connect_gdb <nao ip>"
+echo
+echo "to connect, and then on the nao:"
+echo
+echo "\trunswift_gdbserver"
+echo
+echo "=================================================="

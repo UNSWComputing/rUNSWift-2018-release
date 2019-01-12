@@ -1,0 +1,8 @@
+Copyright	gpl-2.0.txt	/^ Copyright (C) 1989, 1991 Free Software Foundation/
+cmake_minimum_required	CMakeLists.txt	/^cmake_minimum_required(VERSION 2.8.6 FATAL_ERROR)$/
+include	CMakeLists.txt	/^include("${CMAKE_CURRENT_SOURCE_DIR}\/bootstrap.cm/
+message	CMakeLists.txt	/^    message("Nao v4\/5 atom build detected")$/
+or	LICENSE	/^version 2 of the License, or (at your option) any /
+run	cscope.out	/^(cڡ $/
+set	bootstrap.cmake	/^set ( CMAKE_CXX_FLAGS_PROFILE "-pg -O3 -DNDEBUG" C/
+wiki	README.markdown	/^The [wiki](..\/..\/wiki) holds the documentation.$/

@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+set -u
+
+echo "============================================="
+echo "In a new terminal on your local machine, run:"
+echo
+echo "    nao_remote_gdb"
+echo
+echo "to connect the debugger"
+echo "============================================="
+
+gdbserver HOST:2345 runswift

@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+set -u
+
+cd $RUNSWIFT_CHECKOUT_DIR
+gdb -x $RUNSWIFT_CHECKOUT_DIR/utils/remote_gdb

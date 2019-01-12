@@ -1,0 +1,9 @@
+# HY   HP  LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP     LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+
+# init position stiff
+  0    0   90      30     0      0      0   0     0      0      0      0       0      0      0      0     0      0      0     90     -30     0     0     0   0  400
+$ 1    1    1      1     1       1      1   1     1      1      1      1       1      1      1      1     1      1      1      1      1      1     1     1   1 
+
+# feet in, hands to front
+  -15  -37  40     12    5      -85     0   0    1      17      -85    115    -15     -16    17     -85   115    -25    -16    40     -12    -5    85    0   0  400
+$ .5   0.5  1      1     1       1      1   1    0.5    0.5     0.5    1       1      0.5    1      0.5   1      1      0.5    1      1      1     1     1   1 

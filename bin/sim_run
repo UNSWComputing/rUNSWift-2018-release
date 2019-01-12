@@ -1,0 +1,22 @@
+#!/bin/sh
+TEAM=18
+if [ "$#" -gt "0" ]; then
+    TEAM=$1
+fi
+
+NUM_ROBOTS=5
+if [ "$#" -gt "1" ]; then
+    NUM_ROBOTS=$2
+fi
+
+
+echo "Starting $NUM_ROBOTS robots on team $TEAM..."
+
+cd ${RUNSWIFT_CHECKOUT_DIR}
+cd build-release
+for i in $(seq 1 $NUM_ROBOTS);
+do
+    echo $i
+    ./robot/runswift -T $TEAM -n $i > /dev/null 2>&1 &
+    sleep 3
+done

@@ -1,0 +1,48 @@
+# HY   HP   LSP  LSR  LEY  LER  LWY  LH  LHYP LHR  LHP  LKP  LAP  LAR  RHR  RHP   RKP  RAP  RAR  RSP  RSR  REY  RER  RWY  RH  DUR
+  0    29   121  -2   86   -51  0    0   0    0    -80  125  -45  0    0    -80   125  -45  0    118  13   -99  46   0    0   300
+
+# open legs to enlarge cover range
+  0    29   121  -2   86   -51  0    0    -67  30   -86  111  15   -19  -30  -86  111  15   19   118  13   -99  46   0    0    500
+
+# wider and arms inbetween legs  
+  0    29   121  -2   86   -51  0    0    -67  17   -89  63   56   -7   -17  -89  63   56   6    118  13   -99  46   0    0    600
+
+# pause and limp legs
+  0    29   121  -2   86   -51  0    0    -67  17   -89  63   56   -7   -17  -89  63   56   6    118  13   -99  46   0    0    1200
+$ 1    1    1    1    1     1    1   1    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    1    1 
+
+
+
+# HY   HP  LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP     LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+# right hand support, left leg in
+  0   29  108    -12     19     -18    0   0     -56     19    -75   120      18    -7     -38    -78    28     54     0     120    -16     -30   9     0   0  600
+  0   29  108    -12     19     -18    0   0     -66     19    -45   120     -16    -10    -38    -70    24     54     3     120    -16     -30   9     0   0  800
+ 
+# HY   HP  LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP     LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+# right leg half in
+  0   29  108    -12     19     -18    0   0     -68     10    -14   120     -49    -17    -27    -86    40     58     15     120    -16     -30   9     0   0  200
+  0   29  108    -12     19     -18    0   0     -64     12    -16   120     -53    -11    -26    -70    42     53     15    120    -16     -30   9     0   0  200
+  0   29  108    -12     19     -18    0   0     -60     23    -40   120     -61    -8     -24    -30    47     41     18     120    -16     -30   9     0   0  200
+
+# shift body to left - the 3 lines here are the most unstable, be careful
+ 0   29  108    -12     19     -18     0   0     -59     24    -22   120     -68    -4     -25    -31    40     34    11     120    -16     -30   9     0   0  200
+$ 1   1   0      0       0      0      0   0     1       1     1     1       1      1      1      1      1      1      1     0      0    0    0    0    0       
+  
+
+# HY   HP     LSP     LSR   LEY    LER   LWY  LH   LHYP    LHR     LHP  LKP    LAP    LAR    RHR    RHP   RKP    RAP    RAR   RSP     RSR    REY   RER    RWY RH DUR
+# right leg more in
+  0     29    108    -12     19     -18    0   0  -57       24    -30   120     -68     0     -7     -32    82     -2     20     120    -16     -30   9     0   0  700
+$ 0.6   0.6   0      0       0      0      0   0  0.6       0.6   0.6   0.6       0.6      0.6      0.6      0.6      0.6      0.6      0.6     0      0        0    0     0   0    
+
+# sit
+  0   0   71     2       -34    -47    55  0     0       0     -49   121     -68    0      0      -49    122    -69    0     71     -1   34   47   -53  0   1000
+$ 1   1   0      0       0      0      0   0     1       1     1     1       1      1      1      1      1      1      1     0      0    0    0    0    0       
+  
+# stabilise in sitting position 
+  0   0   71     2       -34    -47    55  0     0       0     -49   121     -68    0      0      -49    122    -69    0     71     -1   34   47   -53  0   1000
+$ 1   1   0      0       0      0      0   0     1       1     1     1       1      1      1      1      1      1      1     0      0    0    0    0    0     
+
+# stand
+  0   29  90      25     0      0      0   0      0      0     -28   50      -25     0      0     -28   50     -25     0     90     -25      0    0     0   0  800
+
+$ 1   1   0      0       0      0      0   0     1       1     1     1       1      1      1      1      1      1      1     0      0        0    0     0   0     

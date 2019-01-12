@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# Functions
+function extract {
+  mkdir -p "$RUNSWIFT_CHECKOUT_DIR"/logs
+  mkdir -p "$RUNSWIFT_CHECKOUT_DIR"/logs/"$1"
+  scp -r nao@"$1".local:/var/volatile/runswift/\* "$RUNSWIFT_CHECKOUT_DIR"/logs/"$1"/.
+  scp nao@"$1".local:output_logs.txt "$RUNSWIFT_CHECKOUT_DIR"/logs/"$1"/.
+}
+
+# Definitions
+CONFIG_FILE="$RUNSWIFT_CHECKOUT_DIR/build-release/naos_for_extract_logs.config"
+
+INFO=""
+yesno="y"
+if [ -f "$CONFIG_FILE" ]
+  then
+  INFO=`cat "$CONFIG_FILE"`
+fi
+if [ "$INFO" == "" ]
+  then
+  echo "No configuration file exists. You will have to write one. Each line follows the format:"
+  echo "player name"
+  echo ""
+  echo "Press any key to create the file..."
+  read yesno
+  gedit "$CONFIG_FILE" &> /dev/null
+else
+  echo "Please read the following settings."
+  echo "They follow format \"player name\""
+  echo "==============================================================="
+  echo "$INFO"
+  echo "==============================================================="
+  echo "Are the following configuration settings OK? [Y/n]"
+  read yesno
+  if [ "$yesno" != "y" ] && [ "$yesno" != "Y" ]
+    then
+    gedit "$CONFIG_FILE" &> /dev/null
+  fi
+fi
+echo "==============================================================="
+
+while read p
+do 
+  name=`echo $p`
+  ping -q -c 1 "$name.local" &> /dev/null
+  if [ $? -ne 0 ]
+  then
+    echo "Unable to ping $name.local"
+  else 
+    extract $name
+    echo "Extracted log from $name"
+  fi
+done < $CONFIG_FILE
+exit 0
